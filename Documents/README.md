@@ -11,6 +11,18 @@ This project demonstrates how a modern backend application works, including **AP
 It simulates a real-world system where students can place food orders, and the system tracks analytics such as top menu items and total spending.
 
 ---
+## 🧠 Core Focus: server.js Architecture
+
+This project strongly focuses on the design and structure of the `server.js` file, which acts as the backbone of the backend system.
+
+It is responsible for:
+- Initializing the Express application
+- Configuring middleware (CORS, JSON parsing)
+- Connecting to MongoDB using Mongoose
+- Attaching modular route handlers
+- Starting the server only after a successful database connection
+
+This demonstrates a clear understanding of backend architecture and execution flow in a real-world Node.js application.
 
 ## 🛠️ Tech Stack
 
@@ -120,6 +132,8 @@ node server.js
 4. Route handler executes logic
 5. Mongoose interacts with MongoDB
 6. Response is returned to client
+
+Client → Express → Middleware → Routes → Mongoose → MongoDB → Response
 
 ---
 
